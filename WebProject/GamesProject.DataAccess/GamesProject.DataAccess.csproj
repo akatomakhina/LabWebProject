@@ -63,6 +63,10 @@
     <Compile Include="ModelConfigurations\GameDbModelConfig.cs" />
     <Compile Include="ModelConfigurations\UserDbModelConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ChannelDbRepository.cs" />
+    <Compile Include="Repositories\FavoriteGamesDbRepository.cs" />
+    <Compile Include="Repositories\GameRepository.cs" />
+    <Compile Include="Repositories\UserDbRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

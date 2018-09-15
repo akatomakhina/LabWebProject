@@ -12,6 +12,6 @@
 
         public int GameId { get; set; }
 
-        public virtual DbGame News { get; set; }
+        public virtual DbGame Games { get; set; }
     }
 }

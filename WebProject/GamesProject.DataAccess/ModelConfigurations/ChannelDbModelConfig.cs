@@ -1,14 +1,19 @@
 ﻿using GamesProject.DataAccess.Common.Models;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GamesProject.DataAccess.ModelConfigurations
 {
     class ChannelDbModelConfig : EntityTypeConfiguration<DbChannel>
     {
+        public ChannelDbModelConfig()
+        {
+            ToTable("Channels");
+            HasKey(k => k.Id);
+            Property(p => p.Title).IsRequired().IsUnicode().IsVariableLength();
+            Property(p => p.Link).IsRequired().IsUnicode().IsVariableLength();
+            Property(p => p.LastModified).IsOptional();
+
+            HasMany(g => g.Games);
+        } 
     }
 }

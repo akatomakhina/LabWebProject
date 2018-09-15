@@ -1,10 +1,5 @@
 ﻿using GamesProject.DataAccess.Common.Models;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GamesProject.DataAccess.ModelConfigurations
 {
@@ -14,11 +9,11 @@ namespace GamesProject.DataAccess.ModelConfigurations
         {
             ToTable("FavoriteGames");
             HasKey(k => k.Id);
-            Property(p => p.LastModified).IsOptional();
-            HasRequired(feed => feed.News).WithMany(f => f.FavoriteNews)
-                .HasForeignKey(userFeed => userFeed.NewsId);
-            HasRequired(user => user.User).WithMany(f => f.FavoriteNews)
-                .HasForeignKey(userFeed => userFeed.UserId);
+            HasRequired(user => user.User).WithMany(g => g.FavoriteGames)
+                .HasForeignKey(favoriteGames=> favoriteGames.UserId);            
+            HasRequired(game => game.Games).WithMany(g => g.FavoriteGames)
+                .HasForeignKey(favoriteGames => favoriteGames.GameId);
+            //Property(p => p.LastModified).IsOptional();
         }
     }
 }
