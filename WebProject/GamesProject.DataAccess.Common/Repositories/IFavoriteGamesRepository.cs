@@ -12,7 +12,9 @@ namespace GamesProject.DataAccess.Common.Repositories
 
         Task<DbFavoriteGames> GetFavoriteGamesByIdAsync(int id);
 
-        Task<DbFavoriteGames> UpdateFavoriteGamesAsync(DbFavoriteGames news);
+        Task<IEnumerable<DbFavoriteGames>> GetFavoriteGamesForUserAsync(int userId);
+
+        //Task<DbFavoriteGames> UpdateFavoriteGamesAsync(DbFavoriteGames news);
 
         Task<DbFavoriteGames> RemoveFavoriteGamesAsync(DbFavoriteGames news);
     }

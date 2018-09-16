@@ -2,6 +2,7 @@
 using GamesProject.DataAccess.Common.Repositories;
 using GamesProject.DataAccess.Context;
 using System;
+using System.Data.Entity;
 using System.Threading.Tasks;
 
 namespace GamesProject.DataAccess.Repositories
@@ -11,19 +12,64 @@ namespace GamesProject.DataAccess.Repositories
         private GamesProjectContext _context;
         private bool isDisposed = false;
 
-        public Task<DbChannel> AddChannelAsync(DbChannel channel)
+        public ChannelDbRepository(GamesProjectContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public Task<DbChannel> DeleteChannelAsync(int id)
+        public async Task<DbChannel> AddChannelAsync(DbChannel channel)
         {
-            throw new NotImplementedException();
+            if (ReferenceEquals(channel, null))
+            {
+                throw new ArgumentNullException(nameof(channel));
+            }
+
+            var addedItem = _context.Channels.Add(channel);
+            await _context.SaveChangesAsync().ConfigureAwait(false);
+            return addedItem;
         }
 
-        public Task<DbChannel> GetChannelByIdAsync(int id)
+        public async Task<DbChannel> DeleteChannelAsync(DbChannel channel)
         {
-            throw new NotImplementedException();
+            if (ReferenceEquals(channel, null))
+            {
+                throw new ArgumentNullException(nameof(channel));
+            }
+
+            var deletedItem = _context.Channels.Remove(channel);
+            await _context.SaveChangesAsync().ConfigureAwait(false);
+            return deletedItem;
+        }
+
+        public async Task<DbChannel> GetChannelByIdAsync(int id)
+        {
+            return await _context.Channels.SingleOrDefaultAsync(f => f.Id == id).ConfigureAwait(false);
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!isDisposed)
+            {
+                if (disposing)
+                {
+                    // If need dispose something
+                }
+
+                isDisposed = true;
+                _context?.Dispose();
+                _context = null;
+            }
+        }
+
+        ~ChannelDbRepository()
+        {
+            Dispose(false);
         }
     }
 }

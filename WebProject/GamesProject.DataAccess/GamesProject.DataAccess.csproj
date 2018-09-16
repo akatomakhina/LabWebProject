@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\GamesProjectContext.cs" />
+    <Compile Include="InjectorPackage.cs" />
     <Compile Include="ModelConfigurations\ChannelDbModelConfig.cs" />
     <Compile Include="ModelConfigurations\FavoriteGamesDbModelConfig.cs" />
     <Compile Include="ModelConfigurations\GameDbModelConfig.cs" />

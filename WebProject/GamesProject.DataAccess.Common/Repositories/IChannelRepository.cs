@@ -7,7 +7,7 @@ namespace GamesProject.DataAccess.Common.Repositories
     {
         Task<DbChannel> AddChannelAsync(DbChannel channel);
 
-        Task<DbChannel> DeleteChannelAsync(int id);
+        Task<DbChannel> DeleteChannelAsync(DbChannel channel);
 
         Task<DbChannel> GetChannelByIdAsync(int id);
     }
