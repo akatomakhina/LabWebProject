@@ -1,0 +1,6 @@
+E:\WebProject\LabWebProject\WebProject\GamesProject.Logic.Common\bin\Debug\GamesProject.Logic.Common.dll
+E:\WebProject\LabWebProject\WebProject\GamesProject.Logic.Common\bin\Debug\GamesProject.Logic.Common.pdb
+E:\WebProject\LabWebProject\WebProject\GamesProject.Logic.Common\obj\Debug\GamesProject.Logic.Common.csprojAssemblyReference.cache
+E:\WebProject\LabWebProject\WebProject\GamesProject.Logic.Common\obj\Debug\GamesProject.Logic.Common.csproj.CoreCompileInputs.cache
+E:\WebProject\LabWebProject\WebProject\GamesProject.Logic.Common\obj\Debug\GamesProject.Logic.Common.dll
+E:\WebProject\LabWebProject\WebProject\GamesProject.Logic.Common\obj\Debug\GamesProject.Logic.Common.pdb
