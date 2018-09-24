@@ -1,10 +1,11 @@
 ﻿using GamesProject.DataAccess.Common.Models;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace GamesProject.DataAccess.Common.Repositories
 {
-    public interface IUserRepository
+    public interface IUserRepository : IDisposable
     {
         Task<DbUser> AddUserAsync(DbUser user);
 

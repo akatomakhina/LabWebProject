@@ -5,14 +5,11 @@ using GamesProject.Logic.Common.Exceptions;
 using GamesProject.Logic.Common.Models;
 using GamesProject.Logic.Common.Services;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace GamesProject.Logic.Services
 {
-    class UserService : IUserService
+    public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
 

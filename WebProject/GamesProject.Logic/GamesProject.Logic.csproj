@@ -33,6 +33,12 @@
     <Reference Include="AutoMapper, Version=7.0.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.7.0.1\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="CodeHollow.FeedReader, Version=1.1.5.0, Culture=neutral, PublicKeyToken=66d870f2b3d70f48, processorArchitecture=MSIL">
+      <HintPath>..\packages\CodeHollow.FeedReader.1.1.5\lib\net452\CodeHollow.FeedReader.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.5.1.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.5.1\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -53,9 +59,15 @@
     <Compile Include="Services\ChannelService.cs" />
     <Compile Include="Services\FavoriteGamesService.cs" />
     <Compile Include="Services\GameService.cs" />
+    <Compile Include="Services\IChannelHelper.cs" />
+    <Compile Include="Services\PageParsers\Parser\IGamePageParser.cs" />
+    <Compile Include="Services\PageParsers\IParseService.cs" />
+    <Compile Include="Services\PageParsers\Parser\StopGamePageParser.cs" />
+    <Compile Include="Services\PageParsers\ParseService.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

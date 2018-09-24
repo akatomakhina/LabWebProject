@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Exceptions\RequestedResourceHasConflictException.cs" />
     <Compile Include="Exceptions\RequestedResourceNotFoundException.cs" />
     <Compile Include="Exceptions\GamesPageParsingException.cs" />

@@ -77,7 +77,7 @@ namespace GamesProject.DataAccess.Repositories
                 _context?.Dispose();
                 _context = null;
             }
-        }
+        }        
 
         ~FavoriteGamesDbRepository()
         {

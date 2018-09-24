@@ -6,7 +6,7 @@ namespace GamesProject.Logic.Common.Services
 {
     public interface IFavoriteGamesService
     {
-        Task<FavoriteGames> AddFavoriteGameAsync(int userId, int newsId);
+        Task<FavoriteGames> AddFavoriteGameAsync(int userId, int gameId);
 
         Task<IEnumerable<FavoriteGames>> GetFavoriteGamesForUserAsync(int userId);
 

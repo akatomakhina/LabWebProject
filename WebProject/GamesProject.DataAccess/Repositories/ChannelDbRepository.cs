@@ -2,6 +2,7 @@
 using GamesProject.DataAccess.Common.Repositories;
 using GamesProject.DataAccess.Context;
 using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Threading.Tasks;
 
@@ -41,6 +42,11 @@ namespace GamesProject.DataAccess.Repositories
             return deletedItem;
         }
 
+        public async Task<IEnumerable<DbChannel>> GetChannelAsync()
+        {
+            return await _context.Channels.ToListAsync().ConfigureAwait(false);
+        }
+
         public async Task<DbChannel> GetChannelByIdAsync(int id)
         {
             return await _context.Channels.SingleOrDefaultAsync(f => f.Id == id).ConfigureAwait(false);
@@ -65,7 +71,7 @@ namespace GamesProject.DataAccess.Repositories
                 _context?.Dispose();
                 _context = null;
             }
-        }
+        }        
 
         ~ChannelDbRepository()
         {
