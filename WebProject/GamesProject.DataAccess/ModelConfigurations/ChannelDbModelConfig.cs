@@ -11,6 +11,7 @@ namespace GamesProject.DataAccess.ModelConfigurations
             HasKey(k => k.Id);
             Property(p => p.Title).IsRequired().IsUnicode().IsVariableLength();
             Property(p => p.Link).IsRequired().IsUnicode().IsVariableLength();
+            Property(p => p.LinkRSS).IsRequired().IsUnicode().IsVariableLength();
             Property(p => p.LastModified).IsOptional();
 
             HasMany(g => g.Games);

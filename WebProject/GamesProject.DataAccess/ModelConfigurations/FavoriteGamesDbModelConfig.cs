@@ -9,11 +9,11 @@ namespace GamesProject.DataAccess.ModelConfigurations
         {
             ToTable("FavoriteGames");
             HasKey(k => k.Id);
+            Property(p => p.LastModified).IsOptional();
             HasRequired(user => user.User).WithMany(g => g.FavoriteGames)
                 .HasForeignKey(favoriteGames=> favoriteGames.UserId);            
             HasRequired(game => game.Games).WithMany(g => g.FavoriteGames)
-                .HasForeignKey(favoriteGames => favoriteGames.GameId);
-            //Property(p => p.LastModified).IsOptional();
+                .HasForeignKey(favoriteGames => favoriteGames.GameId);            
         }
     }
 }

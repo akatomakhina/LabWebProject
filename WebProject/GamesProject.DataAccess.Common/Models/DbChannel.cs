@@ -11,11 +11,7 @@ namespace GamesProject.DataAccess.Common.Models
 
         public string Link { get; set; }
 
-        //public virtual ICollection<DbGame> Platform { get; set; }
-
-        //public virtual ICollection<DbGame> Categories { get; set; }
-
-        //public DateTime PublicationDate { get; set; }
+        public string LinkRSS { get; set; }
 
         public DateTime? LastModified { get; set; }
 

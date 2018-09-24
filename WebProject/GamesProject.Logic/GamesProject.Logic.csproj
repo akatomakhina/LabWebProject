@@ -47,12 +47,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Mappings\GamesMappingProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ChannelHelper.cs" />
+    <Compile Include="Services\ChannelService.cs" />
+    <Compile Include="Services\FavoriteGamesService.cs" />
+    <Compile Include="Services\GameService.cs" />
+    <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GamesProject.DataAccess.Common\GamesProject.DataAccess.Common.csproj">
+      <Project>{3eaeddfd-cf92-447b-9254-0056a7098978}</Project>
+      <Name>GamesProject.DataAccess.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GamesProject.Logic.Common\GamesProject.Logic.Common.csproj">
+      <Project>{3eb188f9-c482-471a-96a0-151b6acebf40}</Project>
+      <Name>GamesProject.Logic.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

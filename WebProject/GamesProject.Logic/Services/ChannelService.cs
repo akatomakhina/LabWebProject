@@ -1,4 +1,5 @@
-﻿using GamesProject.Logic.Common.Models;
+﻿using GamesProject.DataAccess.Common.Repositories;
+using GamesProject.Logic.Common.Models;
 using GamesProject.Logic.Common.Services;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,15 @@ namespace GamesProject.Logic.Services
 {
     public class ChannelService : IChannelService
     {
+        private readonly IChannelRepository _channelRepository;
+        private readonly ChannelHelper _channelHelper;
+
+        public ChannelService(IChannelRepository channelRepository, ChannelHelper channelHelper)
+        {
+            _channelRepository = channelRepository ?? throw new ArgumentNullException(nameof(channelRepository));
+            _channelHelper = channelHelper ?? throw new ArgumentNullException(nameof(channelHelper));
+        }
+
         public Task<IEnumerable<Channel>> GetChannels()
         {
             throw new NotImplementedException();
