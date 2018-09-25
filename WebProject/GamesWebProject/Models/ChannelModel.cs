@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EntertainmentPortal.Web.Models.Sports
+namespace GamesWebProject.Models
 {
     public class ChannelModel
     {

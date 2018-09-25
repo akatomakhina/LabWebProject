@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EntertainmentPortal.Web.Models.Sports
+namespace GamesWebProject.Models
 {
     public class PagedModel<T>
     {

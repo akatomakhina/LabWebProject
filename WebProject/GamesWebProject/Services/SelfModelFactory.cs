@@ -1,11 +1,11 @@
-﻿using EntertainmentPortal.Web.Models.Sports;
-using EntertainmentPortal.Web.Services.Sports.Models;
+﻿using GamesWebProject.Models.Abstract;
+using GamesWebProject.Services.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Web.Http.Routing;
 
-namespace EntertainmentPortal.Web.Services.Sports
+namespace GamesWebProject.Services
 {
     public class SelfModelFactory
     {

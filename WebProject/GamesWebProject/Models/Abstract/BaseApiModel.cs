@@ -1,4 +1,4 @@
-﻿namespace EntertainmentPortal.Web.Models.Sports
+﻿namespace GamesWebProject.Models.Abstract
 {
     public abstract class BaseApiModel
     {

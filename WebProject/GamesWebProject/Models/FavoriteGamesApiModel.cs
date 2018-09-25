@@ -1,7 +1,8 @@
 ﻿using GamesProject.Logic.Common.Models;
+using GamesWebProject.Models.Abstract;
 using System;
 
-namespace EntertainmentPortal.Web.Models.Sports
+namespace GamesWebProject.Models
 {
     public class FavoriteGamesApiModel : BaseApiModel
     {

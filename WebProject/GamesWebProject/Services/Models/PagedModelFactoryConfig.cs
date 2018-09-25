@@ -1,4 +1,4 @@
-﻿namespace EntertainmentPortal.Web.Services.Sports.Models
+﻿namespace GamesWebProject.Services.Models
 {
     public class PagedModelFactoryConfig
     {
