@@ -244,6 +244,7 @@
     <Compile Include="Controllers\FavoriteGamesController.cs" />
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="CustomFilters\GameExceptionFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -255,7 +256,8 @@
     <Compile Include="Services\Models\PagedModelFactoryConfig.cs" />
     <Compile Include="Services\Models\SelfModelFactoryConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StackApis.dtos.cs" />
+    <Compile Include="Services\PagedModelFactory.cs" />
+    <Compile Include="Services\SelfModelFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
