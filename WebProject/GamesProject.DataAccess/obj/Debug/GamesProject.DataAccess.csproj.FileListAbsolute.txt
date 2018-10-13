@@ -15,7 +15,6 @@ E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess\bin\Debug\SimpleI
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess\bin\Debug\System.Net.Http.Formatting.dll
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess\bin\Debug\System.Web.Http.dll
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess\bin\Debug\GamesProject.DataAccess.Common.pdb
-E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess\bin\Debug\GamesProject.DataAccess.Common.dll.config
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess\bin\Debug\EntityFramework.xml
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess\bin\Debug\EntityFramework.Testing.xml

@@ -5,6 +5,7 @@ using System.Web.Http;
 using AutoMapper;
 using FluentValidation;
 using FluentValidation.WebApi;
+using GamesWebProject.Jobs;
 using NLog;
 using Quartz.Impl;
 using SimpleInjector;

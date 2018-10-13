@@ -81,6 +81,7 @@
   <ItemGroup>
     <Compile Include="Context\GamesProjectContext.cs" />
     <Compile Include="InjectorPackage.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelConfigurations\ChannelDbModelConfig.cs" />
     <Compile Include="ModelConfigurations\FavoriteGamesDbModelConfig.cs" />
     <Compile Include="ModelConfigurations\GameDbModelConfig.cs" />
@@ -92,7 +93,9 @@
     <Compile Include="Repositories\UserDbRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

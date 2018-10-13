@@ -135,6 +135,10 @@
       <Project>{3eaeddfd-cf92-447b-9254-0056a7098978}</Project>
       <Name>GamesProject.DataAccess.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GamesProject.DataAccess\GamesProject.DataAccess.csproj">
+      <Project>{51955856-4a65-485d-ba15-65ee13dce2af}</Project>
+      <Name>GamesProject.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GamesProject.Logic.Common\GamesProject.Logic.Common.csproj">
       <Project>{3eb188f9-c482-471a-96a0-151b6acebf40}</Project>
       <Name>GamesProject.Logic.Common</Name>

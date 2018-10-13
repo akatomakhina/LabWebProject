@@ -1,4 +1,3 @@
-E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess.Common\bin\Debug\GamesProject.DataAccess.Common.dll.config
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess.Common\bin\Debug\GamesProject.DataAccess.Common.dll
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess.Common\bin\Debug\GamesProject.DataAccess.Common.pdb
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess.Common\bin\Debug\EntityFramework.dll
@@ -25,7 +24,6 @@ E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess.Common\bin\Debug\
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess.Common\bin\Debug\SimpleInjector.Packaging.xml
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess.Common\bin\Debug\System.Net.Http.Formatting.xml
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess.Common\bin\Debug\System.Web.Http.xml
-E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess.Common\obj\Debug\GamesProject.DataAccess.Common.csprojAssemblyReference.cache
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess.Common\obj\Debug\GamesProject.DataAccess.Common.csproj.CoreCompileInputs.cache
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess.Common\obj\Debug\GamesProject.DataAccess.Common.csproj.CopyComplete
 E:\WebProject\LabWebProject\WebProject\GamesProject.DataAccess.Common\obj\Debug\GamesProject.DataAccess.Common.dll
